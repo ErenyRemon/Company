@@ -1,0 +1,22 @@
+.main{
+    width: 100%;
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+}
+
+.aside{
+    background-color: yellow;
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: center;
+}
+.right{
+    background-color: aqua;
+    flex-grow: 1;
+}
+.left{
+    background-color: blueviolet;
+    flex-grow: 1;
+}

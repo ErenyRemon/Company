@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+
+<body>
+    <nav>
+        <div class="navDiv1">
+            <img src="./images/ColoredLogo.svg" width="150px">
+
+        </div>
+        <div class="navDiv2">
+            <ul class="list">
+                <li> <a class="link" href="./contactus.html">للتواصل </a></li>
+                <li><a class="link" href="./aboutus.html">عن الشركة</a></li>
+                <li> <a class="link" href="./index.html">الرئيسية</a></li>
+            </ul>
+
+        </div>
+        <img class="icon" src="./images/toggleButton.png" width="25" height="25" onclick="toggleMenu()">
+
+    </nav>
+
+
+    <div style="height: 500px; margin-top: 10px;" class="my-auto ">
+        <div class="contact">
+            <h2 class="m-auto">اذا كان لديكم اى استفسار يمكنكم التواصل معنا </h2>
+        </div>
+
+        <div class="d-flex gap-4 justify-content-center " style="margin-left: 100px; margin-top: 150px;">
+            <div style="width: 40%;">
+                <div class="form-floating mb-3 ">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Message</label>
+                </div>
+                <div class="btn btn-outline-primary mt-2">Submit</div>
+            </div>
+
+            <div style="width: 40%;" >
+                <img src="./images/ColoredLogo.svg" alt="">
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer style="margin-top:20px ;">
+        <div class="images">
+            <img class="footerImg" src="./images/icon1.png" width="50px">
+            <img class="footerImg" src="./images/icon1.png" width="50px">
+            <img class="footerImg" src="./images/icon1.png" width="50px">
+        </div>
+        <div class="lastItem">
+            <p style="color: white;">The site was created with Ereny </p>
+        </div>
+    </footer>
+
+
+    <script>
+
+        function toggleMenu() {
+            var links = document.getElementsByClassName('list')[0];
+            // links.style.display = "flex"
+
+            if (links.style.display == "flex") {
+                links.style.display = "none"
+            } else {
+                links.style.display = "flex"
+            }
+        }
+
+
+    </script>
+
+    <script src="bootstrap.js"></script>
+</body>
+
+</html>

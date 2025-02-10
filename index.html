@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="navDiv1">
+            <img src="./images/ColoredLogo.svg" width="150px">
+
+        </div>
+        <div class="navDiv2">
+            <ul class="list">
+                <li > <a class="link" href="./contactus.html">للتواصل </a></li>
+                <li><a class="link" href="./aboutus.html">عن الشركة</a></li>
+                <li> <a class="link" href="./index.html">الرئيسية</a></li>
+            </ul>
+
+        </div>
+        <img class="icon" src="./images/toggleButton.png" width="25" height="25" onclick="toggleMenu()">
+
+    </nav>
+
+    <div class="main">
+        <aside>
+            <div class="left">
+                <img src="./images/engineers.png" width="400px">
+            </div>
+            <div class="right">
+                <span >عن الشركة</span>
+                <h2 style="color: #f2c303; margin-top: 10px;">الشركة المصرية للبناء والتصميم</h2>
+            <p style="margin-top: 10px;">نحن الشركة المسؤلة عن استكمال مشاريع البناء فى المناطق المحيطة الحساسة بيئياً. اقرأ المزيد</p>
+        <button style="background-color: #d63b42;color: white; border: 0px; padding: 10px 40px; margin-top: 30px;">اقرأ المزيد</button>    
+        </div>
+        </aside>
+
+        <div class="divbox3">
+            <div class="box1">
+                <img class="box1Img" src="./images/icon1.png" width="100px">
+                <span style="display: block;">التحليل</span>
+                <q style="display: block;">التحليل الجيد هو المفتاح العميق ومن دونه يبقى الحل سطحياً</q>
+                <button style="margin-bottom: 10px;">المزيد</button>
+            </div>
+            <div class="box2">
+                <img class="box1Img" src="./images/icon2.png" width="100px">
+                <span style="display: block;">التحليل</span>
+                <q style="display: block;">التحليل الجيد هو المفتاح العميق ومن دونه يبقى الحل سطحياً</q>
+                <button style="margin-bottom: 10px;">المزيد</button>
+            </div>
+            <div class="box3">
+                <img class="box1Img" src="./images/icon3.png" width="100px">
+                <span style="display: block;">التحليل</span>
+                <q style="display: block;">التحليل الجيد هو المفتاح العميق ومن دونه يبقى الحل سطحياً</q>
+                <button style="margin-bottom: 10px;">المزيد</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="images">
+        <img class="footerImg" src="./images/icon1.png" width="50px">
+        <img class="footerImg" src="./images/icon1.png" width="50px">
+        <img class="footerImg" src="./images/icon1.png" width="50px">
+    </div>
+        <div class="lastItem">
+            <p style="color: white;">The site was created with Ereny </p>
+        </div>
+    </footer>
+
+
+    <script>
+
+        function toggleMenu() {
+            var links = document.getElementsByClassName('list')[0];
+            // links.style.display = "flex"
+
+            if (links.style.display == "flex") {
+                links.style.display = "none"
+            } else {
+                links.style.display = "flex"
+            }
+        }
+
+
+    </script>
+</body>
+</html>
